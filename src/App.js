@@ -14,6 +14,7 @@ import Product6 from "./product/Product6";
 import Product7 from "./product/Product7";
 import Product8 from "./product/Product8";
 import Product9 from "./product/Product9";
+import Nav from "./Nav";
 
 function App() {
   return (
@@ -21,20 +22,23 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/essential">
-            <Header /> 
+            <Header />
             <HeaderBanner />
             <Slider />
             <ProductCategories />
             <Product1 />
           </Route>
+          <Route path="/nav">
+            <Nav />
+          </Route>
           <Route path="/accessories">
             <Header />
-            <HeaderBanner /> 
+            <HeaderBanner />
             <Slider />
             <ProductCategories />
             <Product9 />
           </Route>
-          <Route path="/shave">   
+          <Route path="/shave">
             <Header />
             <HeaderBanner />
             <Slider />

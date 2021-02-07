@@ -2,15 +2,7 @@ import React from "react";
 import "./HeaderBanner.css";
 import AddCircleIcon from "@material-ui/icons/AddCircle";
 import { useHistory } from "react-router-dom";
-import Modal from "react-bootstrap/Modal";
-import ModalHeader from 'react-bootstrap/ModalHeader';
-import { useState } from "react";
-import ModalFooter from 'react-bootstrap/ModalFooter';
-import { Button } from "@material-ui/core";
 function HeaderBanner() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const history = useHistory();
   const cologne = () => {
     history.push("/cologne");
@@ -32,9 +24,6 @@ function HeaderBanner() {
   };
   const home = () => {
     history.push("/");
-  };
-  const modal = () => {
-    history.push("/nav");
   };
   return (
     <div className="headerbanner">
@@ -73,24 +62,11 @@ function HeaderBanner() {
         <img src="https://d1ebdenobygu5e.cloudfront.net/media/catalog/product/gallery/resized/300/Face-Scrub---De-Tan-_New-Packging_.png" />
         <p>De-Tans</p>
       </div>
-      <div onClick={handleShow} className="headerbanner_list">
-        <AddCircleIcon style={{ marginRight: "10px", color: "grey" }} />
+      <div className="headerbanner_list">
+        <AddCircleIcon
+          style={{ marginRight: "10px", color: "grey", marginLeft: "10px" }}
+        />
         <p>More Categories</p>
-        {/* modal for login and register */}
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
       </div>
     </div>
   );

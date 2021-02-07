@@ -48,9 +48,9 @@ function ProductCategories() {
       <p onClick={skin}>SKIN</p>
       <p onClick={shave}>SHAVE</p>
       <p onClick={accessories}>ACCESSORIES</p>
-      <IconButton style={{color: "black"}}>
-                  <ShoppingCartIcon style={{marginBottom:"3px"}}/>
-        </IconButton>
+      <IconButton style={{ color: "black" }}>
+        <ShoppingCartIcon style={{ marginBottom: "3px" }} />
+      </IconButton>
     </div>
   );
 }
