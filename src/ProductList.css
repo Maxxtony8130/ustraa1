@@ -1,0 +1,35 @@
+.productlist__rating {
+  display: flex;
+  margin-left: 250px;
+  margin-bottom: -20px;
+}
+.productlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.productlist__rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productlist__image {
+  object-fit: contain;
+}
+/* .productlist__image > img {
+  height: 300px;
+} */
+.productlist__name > p {
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  max-width: 400px;
+}
+.productlist__rate > p {
+  margin-right: 15px;
+  font-weight: 700;
+}

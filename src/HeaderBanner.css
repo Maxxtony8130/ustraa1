@@ -1,0 +1,32 @@
+.headerbanner{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
+.headerbanner_list > img {
+    object-fit: contain;
+    height:25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.headerbanner_list{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.headerbanner_list:hover{
+    background-color: lightgray;
+    border-radius: 20px;
+}
+.headerbanner_list > p{
+    font-size: 14px;
+    margin-top: 12px;
+    margin-right: 10px;
+}

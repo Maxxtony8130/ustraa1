@@ -1,0 +1,13 @@
+.custom-img {
+    width: 100%;
+    z-index: -1;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .slider{
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
